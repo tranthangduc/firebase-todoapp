@@ -20,7 +20,7 @@ function useFbStorage() {
     setItems([...items, newItem]);
   };
 
-  const updateItem = async items => {
+  const updateItem = async checked => {
     const changes = { done: !checked.done };
     await updateFirebaseItem(changes, checked.id);
     const newItems = items.map((item) => {
