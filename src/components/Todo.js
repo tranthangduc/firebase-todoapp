@@ -36,6 +36,9 @@ function Todo() {
   // const handleAdd = text => {
   //   updateItem([...items, { key: getKey(), text, done: false }]);
   // };
+  const handleAdd = (text) => {
+    addItem({ text, done: false });
+  };
   
   const handleFilterChange = value => setFilter(value);
 
